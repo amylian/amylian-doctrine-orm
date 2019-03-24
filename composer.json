@@ -25,12 +25,12 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"Amylian\\Doctrine\\DBAL\\" : "src/"
+			"Amylian\\Doctrine\\ORM\\" : "src/"
 		}
 	},
 	"autoload-dev" : {
 		"psr-4" : {
-			"Amylian\\Doctrine\\DBAL\\Tests\\" : "tests/"
+			"Amylian\\Doctrine\\ORM\\Tests\\" : "tests/"
 		}
 	}
 }
