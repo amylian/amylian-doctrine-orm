@@ -30,7 +30,7 @@
 	},
 	"autoload-dev" : {
 		"psr-4" : {
-			"Amylian\\Doctrine\\DBAL\\tests" : "tests/"
+			"Amylian\\Doctrine\\DBAL\\Tests" : "tests/"
 		}
 	}
 }
