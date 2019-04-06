@@ -13,11 +13,17 @@ namespace Amylian\Doctrine\ORM;
  *
  * @author andreas
  */
-class EntityManager extends \Doctrine\ORM\EntityManager implements EntityManagerInterface
+class EntityManager
+        extends \Doctrine\ORM\EntityManager
+        implements EntityManagerInterface
 {
+
     public function __construct(\Amylian\Doctrine\DBAL\ConnectionProviderInterface $connectionProvider)
     {
         $actualConnection = $connectionProvider->getActualConnection();
-        parent::__construct($connectionProvider->getActualConnection(), $actualConnection->getConfiguration(), $eventManager);
+        parent::__construct($connectionProvider->getActualConnection(), 
+                $actualConnection->getConfiguration(), 
+                $actualConnection->getEventManager());
     }
+
 }
